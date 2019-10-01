@@ -6,7 +6,7 @@ def qselect(k, a):
         pivotindx = random.randint(0, len(a)-1)
         pivot = a[pivotindx]
         left = [x for x in a if x < pivot ]
-        right  = [x for x in a if x > pivot ]
+        right  = [x for x in a[:] if x > pivot ]
         print("pivot: ", pivot)
         print("pivot index", pivotindx)
         print("right: ", right)
