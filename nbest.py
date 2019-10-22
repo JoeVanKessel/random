@@ -1,1 +1,3 @@
-sadsa
+def nbesta(a, b):
+    return
+
