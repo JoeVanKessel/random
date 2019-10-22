@@ -1,6 +1,4 @@
 def ksmallest(k, datastream):
-    if k > len(datastream):
-        k = len(datastream)
     ans = [None]*k
     i = 0
     j = 0
@@ -17,9 +15,6 @@ def ksmallest(k, datastream):
         else:
             return ans
         while j < len(ans):
-            print(ans)
-            if datastream[i] > ans[-1]:
-                break
             if datastream[i] < ans[j]:
                 ans.insert(j, datastream[i])
                 del ans[-1]
