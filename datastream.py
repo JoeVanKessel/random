@@ -1,4 +1,6 @@
 def ksmallest(k, datastream):
+    if k > len(datastream):
+        return []
     ans = [None]*k
     i = 0
     j = 0
